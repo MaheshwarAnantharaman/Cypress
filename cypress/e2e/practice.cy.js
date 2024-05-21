@@ -12,6 +12,7 @@ describe('logintest',()=>{
        homepage.username(userdata.username)
        homepage.password(userdata.password)
        homepage.submit()
+       
        cy.wait(4000)
        homepage.urlAssertion()
        homepage.pageTitleAssertion()
