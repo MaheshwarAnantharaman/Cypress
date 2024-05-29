@@ -1,4 +1,5 @@
 class Homepage{
+
     url(){
         return cy.visit('https://practicetestautomation.com/practice-test-login/')
     }

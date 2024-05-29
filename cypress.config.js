@@ -7,7 +7,9 @@ const fs=require('fs')
 const path= require('path')
 
 module.exports = defineConfig({
+  
   e2e: {
+    baseUrl:"https://practicetestautomation.com/practice-test-login/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
 
@@ -24,7 +26,6 @@ module.exports = defineConfig({
           }
           return config
         })
-
 
       }})
     },

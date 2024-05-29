@@ -1,14 +1,16 @@
 {
   "dependencies": {
-    "cypress": "^13.7.3",
     "init": "^0.1.2",
     "node-xlsx": "^0.24.0"
   },
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run",
-    "runtests": "npm run test --"
+    "test": "npx cypress run",
+    "headed": "npx cypress open",
+    "runInChrome": "npx cypress run --browser chrome",
+    "spec": "npx cypress run --spec 'cypress/e2e/apitesting.cy.js'"
   },
   "devDependencies": {
+    "cypress": "^13.10.0",
     "cypress-mochawesome-reporter": "^3.8.2"
   }
 }

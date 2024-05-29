@@ -10,7 +10,7 @@ describe('logintest',()=>{
        cy.visit('/')
        homepage.assertionTitle1()
        homepage.username(userdata.username)
-       homepage.password(userdata.password)
+       homepage.password()
        homepage.submit()
        
        cy.wait(4000)
@@ -20,15 +20,15 @@ describe('logintest',()=>{
        homepage.logOutButtonClick()
      // negative username test
        cy.visit('/')
-       homepage.incorrectUser(userdata.incorrectUser)
-       homepage.password(userdata.password)
+       homepage.incorrectUser()
+       homepage.password()
        homepage.submit()
        homepage.errorDisplay1()
        homepage.errorMessage1()
      //negative password test
        cy.visit('/')
-       homepage.username(userdata.username)
-       homepage.incorrectPass(userdata.incorrectPass)
+       homepage.username()
+       homepage.incorrectPass()
        homepage.submit()
        homepage.errorDisplay1()
        homepage.eroorMessage2()
